@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tajawal:wght@200;300;400;500;700&display=swap');
+:root{
+    --fondo: #232323;
+    --color_blue: #6AE4FF;
+    --fff: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: var(--fondo);
+}
+
+.container{
+    padding: 28px;
+}
+
+.container{
+    padding: 50px;
+}
+
+header .container{
+    width: auto;
+    height: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .webname{
+    color: var(--color_blue);
+    font-weight: 300;
+}
+
+.container i{
+    font-size: 26px;    
+    color: var(--fff);
+    margin-right: 12px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.container i:hover{
+    color: var(--color_blue);
+}
+
+
+/*--------------SECTION-----------------*/
+
+
+.container .presentation{
+    margin-top: 0.8em;
+    padding: 50px;
+    border-bottom: 0.1px solid #eeebeb23;
+}
+
+.container .presentation h1 {
+    font-size: 65px;
+    color: var(--fff);
+}
+
+.container .presentation p{
+    text-align: left;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    color: #eeebeb;
+    font-size: 1rem;
+}
+
+span{
+    color:var(--color_blue)
+}
+
+#nome{
+    color: #fff;
+    border-bottom: 5px solid #6AE4FF;
+}
+
+.presentation a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #6AE4FF;
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+
+
+/*----------------SKILLS---------------*/
+
+
+.skillscontainer{
+    padding: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    max-width: 60%;
+    margin-left: 10%;
+}
+
+.skills h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.skills p{
+    font-size: 12px;
+    color: #e0e0e0;
+}
+
+.container #projects{
+    font-size: 45px;
+    color: #fff;
+    padding: 25px;
+    font-weight: 700;
+}
+
+
+.projects{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.projects .card h3{
+    margin-top: 10px;
+}
+
+.projects .card{
+    color:var(--fff);
+}
+.projects .card p{
+    font-size: 10px;
+    color: #eeebeb91;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.card img{
+    width: auto;
+    height: 220px;
+    border-radius: 15px;
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+/*-------------------------FOOTER------------------*/
+
+footer .container{
+    width: auto;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.container .formcontainer{
+    border-bottom: 0.1px solid #eeebeb23;
+}
+
+.texto h3{
+    color: #fff;
+    font-size: 40px;
+    margin-top:20px;
+    padding: 20px;
+}
+
+.contacto .lnk i{
+    margin-right: 1px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #acacac;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #acacac;
+    background: none;
+    outline: none;
+    caret-color: #acacac;
+    color: #fff;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+input:invalid,
+textarea:invalid{
+    border-color: #f831318c;
+}
+
+
+input[type="submit"] {
+    background-color: #6AE4FF;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6ae4ff9a;
+}
+
